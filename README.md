@@ -1,40 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+1.next: Thư mục này chứa các tệp được biên dịch và các tệp tạm thời mà Next.js sử dụng để chạy ứng dụng. Thường được tạo tự động trong quá trình build và không cần chỉnh sửa.
 
-## Getting Started
+2.node_modules: Chứa các thư viện và module phụ thuộc mà bạn đã cài đặt thông qua npm hoặc yarn. Tất cả các thư viện cần thiết cho dự án của bạn đều nằm trong thư mục này.
 
-First, run the development server:
+3.pages: Đây là thư mục quan trọng trong dự án Next.js, chứa các file React component đại diện cho các trang trong ứng dụng. Các file trong thư mục này sẽ tự động được coi là các route của ứng dụng.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+4.public: Thư mục này chứa các tệp tĩnh như hình ảnh, font, favicon, v.v. Bất cứ thứ gì trong thư mục này có thể được truy cập trực tiếp từ root URL của ứng dụng.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5.styles: Chứa các file CSS dùng để định dạng giao diện của ứng dụng.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+6.gitignore: File này chứa danh sách các tệp và thư mục mà bạn muốn Git bỏ qua khi commit, như node_modules, .next, v.v.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+7.next-env.d.ts: File này được Next.js tạo ra tự động để đảm bảo rằng TypeScript biết về các module mà Next.js cung cấp.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+8.next.config.mjs: File cấu hình cho Next.js, nơi bạn có thể tùy chỉnh cách Next.js hoạt động, như cấu hình cho server-side rendering, đường dẫn, proxy, v.v.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+9.package-lock.json & package.json:
 
-## Learn More
+    package.json: File này chứa thông tin về dự án, bao gồm các dependencies (phụ thuộc), scripts, và metadata khác.
+    package-lock.json: File này khóa các phiên bản của các thư viện mà dự án sử dụng để đảm bảo sự nhất quán khi cài đặt dependencies.
+10.README.md: File này thường được sử dụng để cung cấp mô tả về dự án, cách cài đặt, sử dụng và các thông tin khác dành cho người dùng hoặc developer.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+11.tsconfig.json: File cấu hình cho TypeScript, chứa các thiết lập cho việc biên dịch TypeScript trong dự án, như đường dẫn, mục tiêu của ECMAScript, v.v.
